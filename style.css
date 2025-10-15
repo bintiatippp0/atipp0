@@ -3,12 +3,12 @@
 
 /* Variabel Warna */
 :root {
-    --pink-soft: #F7BfE9; 
-    --pink-medium: #FFB6C1; 
-    --pink-dark: #E33F91; 
+    --pink-soft: #FFE4E1; /* Misty Rose */
+    --pink-medium: #FFB6C1; /* Light Pink */
+    --pink-dark: #FF69B4; /* Hot Pink */
     --white: #FFFFFF;
     --text-dark: #4F4F4F;
-    --bg-light: #FFC3D7; 
+    --bg-light: #FFF0F5; /* Lavender Blush */
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -17,7 +17,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Jarak agar judul tidak tertutup nav saat scroll */
 }
 
 body {
@@ -33,22 +37,36 @@ body {
     padding: 0 20px;
 }
 
-/* Header dan Navigasi */
+/* --- BAGIAN YANG DIPERBAIKI --- */
+
+/* Header (HANYA berisi judul besar, TIDAK STICKY) */
 header {
     background: linear-gradient(135deg, var(--pink-medium), var(--pink-soft));
     color: var(--white);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px; /* Mengurangi padding atas karena nav punya padding sendiri */
 }
 
+/* Navigasi (DIBUAT STICKY) */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--pink-medium); /* Warna solid agar tidak transparan */
+    padding: 15px 40px;
+    
+    /* Properti agar navigasi lengket di atas */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Penyesuaian agar background penuh dan rapi */
+    margin: 0 -20px;
+    padding-left: calc(20px + 20px);
+    padding-right: calc(20px + 20px);
 }
+
+/* --- AKHIR BAGIAN PERBAIKAN --- */
+
 
 .logo {
     font-size: 1.8rem;
@@ -72,7 +90,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--pink-dark);
 }
 
@@ -100,8 +119,8 @@ nav ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-    margin: 0 auto; /* Center the text */
-    display: inline-block; /* Make it work with margin auto */
+    margin: 0 auto;
+    display: inline-block;
 }
 
 @keyframes typing {
