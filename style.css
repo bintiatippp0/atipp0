@@ -1,0 +1,243 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variabel Warna */
+:root {
+    --pink-soft: #F7BfE9; 
+    --pink-medium: #FFB6C1; 
+    --pink-dark: #E33F91; 
+    --white: #FFFFFF;
+    --text-dark: #4F4F4F;
+    --bg-light: #FFC3D7; 
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Reset dan Gaya Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header dan Navigasi */
+header {
+    background: linear-gradient(135deg, var(--pink-medium), var(--pink-soft));
+    color: var(--white);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--pink-dark);
+}
+
+.header-content {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+/* Animasi Teks Ketik */
+.animated-text {
+    border-right: 3px solid var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    margin: 0 auto; /* Center the text */
+    display: inline-block; /* Make it work with margin auto */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--white); }
+}
+
+/* Gaya Kartu dan Section */
+.card {
+    background: var(--white);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--pink-dark);
+}
+
+/* Visi & Misi */
+.vision-mission-container {
+    display: flex;
+    gap: 30px;
+}
+.card-vm {
+    flex: 1;
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-vm ul {
+    list-style-position: inside;
+}
+
+/* Proyek */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--pink-soft);
+}
+
+thead {
+    background-color: var(--pink-medium);
+    color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+/* Keahlian */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skill-category {
+    width: 48%;
+}
+
+.skill-category h3 {
+    color: var(--pink-dark);
+    margin-bottom: 15px;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    background: var(--bg-light);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Kontak */
+.contact-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: var(--pink-dark);
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: var(--pink-medium);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--pink-medium);
+    color: var(--white);
+    margin-top: 30px;
+}
+
+/* Animasi Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
