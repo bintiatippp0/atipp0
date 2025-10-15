@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio Binti Nur Latif</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Binti Nur Latif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#" data-section="home" class="active">Home</a></li>
-            <li><a href="#" data-section="profile">Profile</a></li>
-            <li><a href="#" data-section="project">Project</a></li>
-            <li><a href="#" data-section="skills">Skills</a></li>
-            <li><a href="#" data-section="contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section id="home" class="section active">
-            <h1 class="animated-text">Halo, saya Binti Nur Latif</h1>
-            <img src="foto-saya.jpg" alt="Foto Binti Nur Latif" class="profile-photo" />
-            <p class="animated-text subtitle">Selamat datang di portofolio saya!</p>
-        </section>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">BNL.</div>
+                <ul>
+                    <li><a href="#about">Profil</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1 class="animated-text">Halo, Saya Binti Nur Latif</h1>
+                <p>Seorang Pelajar Teknik Komputer dan Jaringan</p>
+            </div>
+        </div>
+    </header>
 
-        <section id="profile" class="section">
+    <main class="container">
+        <section id="about" class="card reveal">
             <h2>🗝️ Profil Singkat (About Me)</h2>
             <p>
-                Halo!! Saya Binti Nur Latif, seorang pelajar yang menempuh pendidikan di bidang Teknik Komputer dan Jaringan (TKJ).
+                Halo!! Saya Binti Nur Latif, seorang pelajar yang menempuh pendidikan di bidang Teknik Komputer dan Jaringan (TKJ). Saya memiliki minat besar terhadap dunia jaringan komputer, sistem informasi, dan pengembangan website. Saya aktif mengembangkan kemampuan di bidang web programming menggunakan bahasa seperti HTML, CSS, JavaScript, Python, serta mempelajari manajemen jaringan berbasis Mikrotik dan Linux Debian.
             </p>
             <p>
-                Saya memiliki minat besar terhadap dunia jaringan komputer, sistem informasi, dan pengembangan website. Saya aktif mengembangkan kemampuan di bidang web programming menggunakan bahasa seperti HTML, CSS, JavaScript, Phyton, serta mempelajari manajemen jaringan berbasis Mikrotik dan Linux Debian.
+                Saya adalah tipe orang yang penasaran, suka belajar hal baru, dan berorientasi pada hasil. Saya senang ketika bisa memecahkan masalah — baik itu bug pada kode, kesalahan konfigurasi jaringan, maupun tantangan teknis lainnya. Dalam membuat sebuah website, saya tidak hanya berfokus pada fungsionalitas, tetapi juga tampilan yang menarik dan mudah digunakan (user-friendly).
             </p>
             <p>
-                Saya adalah tipe orang yang penasaran, suka belajar hal baru, dan berorientasi pada hasil. Saya senang ketika bisa memecahkan masalah — baik itu bug pada kode, kesalahan konfigurasi jaringan, maupun tantangan teknis lainnya. Dalam membuat sebuah website, saya tidak hanya berfokus pada fungsionalitas, tetapi juga tampilan yang menarik dan mudah digunakan (user friendly).
+                Saya memiliki cita-cita untuk menjadi web developer profesional yang juga memahami dasar-dasar jaringan komputer, sehingga mampu menciptakan sistem web yang stabil, aman, dan terintegrasi. Saya ingin terus belajar dan berkembang, baik melalui proyek pribadi, pelatihan, maupun pengalaman kerja nyata di dunia teknologi.
             </p>
-            <p>
-                Saya memiliki cita-cita untuk menjadi web developer profesional yang juga memahami dasar-dasar jaringan komputer, sehingga mampu menciptakan sistem web yang stabil, aman, dan terintegrasi.
-            </p>
-            <p>
-                Saya ingin terus belajar dan berkembang, baik melalui proyek pribadi, pelatihan, maupun pengalaman kerja nyata di dunia teknologi.
-            </p>
-
-            <h3>📌 Visi dan Misi</h3>
-            <p><strong>Visi:</strong><br />Menjadi pelajar yang berkompeten dan kreatif di bidang teknologi informasi serta mampu menciptakan inovasi digital yang bermanfaat.</p>
-            <p><strong>Misi:</strong></p>
-            <ul>
-                <li>Mengembangkan kemampuan coding dan jaringan komputer.</li>
-                <li>Membuat website yang efisien dan mudah digunakan.</li>
-                <li>Meningkatkan kemampuan problem solving dalam bidang IT.</li>
-                <li>Terus belajar dan beradaptasi dengan perkembangan teknologi.</li>
-            </ul>
         </section>
 
-        <section id="project" class="section">
+        <section id="vision-mission" class="reveal">
+            <h2>📌 Visi dan Misi</h2>
+            <div class="vision-mission-container">
+                <div class="card-vm">
+                    <h3>Visi</h3>
+                    <p>Menjadi pelajar yang berkompeten dan kreatif di bidang teknologi informasi serta mampu menciptakan inovasi digital yang bermanfaat.</p>
+                </div>
+                <div class="card-vm">
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Mengembangkan kemampuan coding dan jaringan komputer.</li>
+                        <li>Membuat website yang efisien dan mudah digunakan.</li>
+                        <li>Meningkatkan kemampuan problem solving dalam bidang IT.</li>
+                        <li>Terus belajar dan beradaptasi dengan perkembangan teknologi.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card reveal">
             <h2>💼 Daftar Proyek Website</h2>
             <table>
                 <thead>
-                    <tr><th>No</th><th>Nama Proyek</th><th>Deskripsi</th><th>Teknologi</th></tr>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Proyek</th>
+                        <th>Deskripsi</th>
+                        <th>Teknologi</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -67,56 +79,64 @@
                         <td>HTML, CSS, JavaScript</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td>2</td>
                         <td>To-Do List / Catatan Harian</td>
                         <td>Aplikasi pencatat tugas dan kegiatan harian.</td>
                         <td>HTML, CSS, JS</td>
                     </tr>
                     <tr>
-                        <td>8</td>
+                        <td>3</td>
                         <td>Kalkulator BMI</td>
                         <td>Menghitung indeks massa tubuh dengan hasil kategori.</td>
                         <td>HTML, CSS, JS</td>
                     </tr>
                     <tr>
-                        <td>9</td>
-                        <td>Catatan Keuangan Dan Target Tabungan</td>
-                        <td>Mencatat pemasukan, pengeluaran, dan menghitung waktu tercapai target tabungan.</td>
+                        <td>4</td>
+                        <td>Catatan Keuangan & Target Tabungan</td>
+                        <td>Mencatat pemasukan, pengeluaran, dan target tabungan.</td>
                         <td>HTML, CSS, JS</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="reveal">
             <h2>🧠 Keahlian (Skills)</h2>
-            <h3>💻 Teknis:</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript, Python</li>
-                <li>Mikrotik (IP Addressing, Bandwidth Management, DHCP)</li>
-                <li>UI/UX dasar (desain antarmuka pengguna)</li>
-                <li>Konfigurasi jaringan sederhana</li>
-            </ul>
-            <h3>🌱 Non-Teknis (Soft Skills):</h3>
-            <ul>
-                <li>Disiplin & tanggung jawab</li>
-                <li>Kerja sama tim</li>
-                <li>Kepemimpinan</li>
-                <li>Kreatif & komunikatif</li>
-                <li>Problem solving</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-category card">
+                    <h3>💻 Teknis</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, Python</li>
+                        <li>Mikrotik (IP Addressing, Bandwidth Management, DHCP)</li>
+                        <li>UI/UX dasar (desain antarmuka pengguna)</li>
+                        <li>Konfigurasi jaringan sederhana</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>🌱 Non-Teknis (Soft Skills)</h3>
+                    <ul>
+                        <li>Disiplin & Tanggung Jawab</li>
+                        <li>Kerja Sama Tim</li>
+                        <li>Kepemimpinan</li>
+                        <li>Kreatif & Komunikatif</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="card reveal">
             <h2>📫 Kontak</h2>
-            <ul class="contact-list">
-                <li>📧 Email: <a href="mailto:bintinurlatif419@gmail.com">bintinurlatif419@gmail.com</a></li>
-                <li>📱 WhatsApp: 087803411502</li>
-                <li>💼 GitHub: <a href="https://github.com/bintiatippp0" target="_blank">github.com/bintiatippp0</a></li>
-                <li>🌐 Instagram: <a href="https://instagram.com/atipppcuyy" target="_blank">atipppcuyy</a></li>
-            </ul>
+            <div class="contact-links">
+                <a href="mailto:bintinurlatif419@gmail.com" target="_blank">📧 Email</a>
+                <a href="https://wa.me/6287803411502" target="_blank">📱 WhatsApp</a>
+                <a href="https://github.com/bintiatippp0" target="_blank">💼 GitHub</a>
+                <a href="https://www.instagram.com/atipppcuyy/" target="_blank">🌐 Instagram</a>
+            </div>
         </section>
     </main>
+
+    <footer>
         <p>Dibuat dengan ♡ oleh Binti Nur Latif</p>
     </footer>
 
