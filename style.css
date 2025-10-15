@@ -3,12 +3,12 @@
 
 /* Variabel Warna */
 :root {
-    --pink-soft: #FFE4E1; /* Misty Rose */
-    --pink-medium: #FFB6C1; /* Light Pink */
-    --pink-dark: #FF69B4; /* Hot Pink */
+    --pink-soft: #FFE1F7; 
+    --pink-medium: #E35FCE; 
+    --pink-dark: #D1349B; 
     --white: #FFFFFF;
     --text-dark: #4F4F4F;
-    --bg-light: #FFF0F5; /* Lavender Blush */
+    --bg-light: #FEC9F1; /* Lavender Blush */
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
