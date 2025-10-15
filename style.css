@@ -20,7 +20,7 @@
     height: 56px;
     border: none;
     border-radius: 12px;
-    background: #ff65c; /* sama seperti gambar */
+    background: #ff65c; 
     color: #222;
     font-size: 2rem;
     cursor: pointer;
@@ -71,17 +71,17 @@ header {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--pink-medium);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Tambahkan baris di bawah ini */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--pink-medium); /* <-- Tambahkan background agar tidak transparan saat scroll */
-    padding: 15px 20px; /* <-- Tambahkan padding agar lebih rapi */
-    border-radius: 0 0 10px 10px; /* <-- Opsional: agar sudut bawahnya manis */
-    margin: 0 -20px; /* <-- Agar backgroundnya penuh selebar container */
+    padding: 15px 40px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -93,6 +93,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
