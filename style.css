@@ -12,6 +12,29 @@
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+#scrollUpBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 12px;
+    background: #ff65c; /* sama seperti gambar */
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    display: none; /* default hidden */
+    z-index: 999;
+    transition: background 0.3s;
+}
+
+#scrollUpBtn:hover {
+    background: var(--pink-dark);
+    color: white;
+}
+
 /* Reset dan Gaya Dasar */
 * {
     margin: 0;
@@ -246,6 +269,29 @@ footer {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 12px;
+    background: #DE2FA3; 
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    display: none; /* default hidden */
+    z-index: 999;
+    transition: background 0.3s;
+}
+
+#scrollUpBtn:hover {
+    background: var(--pink-dark);
+    color: white;
 }
 
 .reveal.active {
